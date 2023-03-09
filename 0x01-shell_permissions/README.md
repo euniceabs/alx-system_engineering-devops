@@ -1,0 +1,1 @@
+command lines for shell permissions

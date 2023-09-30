@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This script displays specific information from the /etc/passwd file.
+# It shows the following details:
+# username
+# group id
+# shell's full path for the user
+
+while IFS= read -r LINE; 
+do
+    echo "$LINE" | cut -d':' -f1,4,7
+done < /etc/passwd

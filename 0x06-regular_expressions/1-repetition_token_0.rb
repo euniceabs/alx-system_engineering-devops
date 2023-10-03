@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
-# Ruby script takes arg, uses regex matching
+# A Ruby script passing one argument to regex.
 
-puts ARGV[0].scan(/hb?t?n/).join
+puts ARGV[0].scan(/hbt{2,5}n/).join
